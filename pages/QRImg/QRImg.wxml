@@ -1,0 +1,6 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+    <view slot="content">签到页面</view>
+</cu-custom>
+<view class="imgWrap">
+    <image class="" src="{{imgUrl}}" mode="widthFix" />
+</view>

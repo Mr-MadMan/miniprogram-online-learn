@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/login_1/login_1",
+    "pages/personEdit/personEdit",
+    "pages/detail/detail",
+    "pages/classesshow/classesshow",
+    "pages/Cmenu/Cmenu",
+    "pages/allclasses/allclasses",
+    "pages/demoPage/demoPage",
+    "pages/teacherNav/teacherNav",
+    "pages/exam/exam",
+    "pages/Cyuyan/Cyuyan",
+    "pages/QRCode/QRCode",
+    "pages/QRImg/QRImg",
+    "pages/courseChapter/courseChapter",
+    "pages/examChapter/examChapter",
+    "pages/examChosen/examChosen"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微课在线学习平台",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#d3d3d3"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home_active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/mySelected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap53.json"
+}

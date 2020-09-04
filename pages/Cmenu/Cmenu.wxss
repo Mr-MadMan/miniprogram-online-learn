@@ -1,0 +1,5 @@
+/* pages/Cmenu/Cmenu.wxss */
+text{
+  width: 200rpx;
+  margin: 0 auto;
+}

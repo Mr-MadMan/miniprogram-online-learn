@@ -1,0 +1,7 @@
+<!--pages/demoPage/demoPage.wxml-->
+<cu-custom class="title" bgColor="bg-white" isBack="{{true}}" style="width:100%">
+  <view slot="content">demo页</view>
+</cu-custom>
+<view class="demoView">
+  <text>敬请期待</text>
+</view>

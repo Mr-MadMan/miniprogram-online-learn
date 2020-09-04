@@ -1,0 +1,46 @@
+<!-- 详情页 -->
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+    <view slot="content">{{courseNameC}}</view>
+</cu-custom>
+<view class="title">
+    <image class="" src="{{coverUrl}}" mode='widthFix'></image>
+</view>
+<view class="mian-content">
+    <view class="content-text"><text>以下是本节课课程内容：</text></view>
+    <scroll-view class='class-list' scroll-x>
+        <image wx:for="{{imgList}}" wx:key="index" mode="widthFix" bindtap="previewImage" data-src="{{item}}"
+            src="{{item}}"></image>
+    </scroll-view>
+</view>
+
+<!-- 评论area -->
+<view class="comment-user">
+    <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    <view class="comment-write">
+        <text class="cuIcon-writefill text-gray"></text>
+        <input type="text" value="{{commentValue}}" placeholder="说点啥吧" bindinput="commentInput"></input>
+    </view>
+    <!-- 自定义属性data-click获取到输入框内的value值 -->
+    <button class="" data-click="{{commentValue}}" bindtap="commentSubmit">提交</button>
+</view>
+<view class="comment-wrap">
+    <view class="comment-list" wx:for="{{commentList}}" wx:key="index">
+        <image src="{{item.avatarUrl?item.avatarUrl:userInfo.avatarUrl}}" mode="widthFix"></image>
+        <view class="listDetail">
+            <text class="">{{item.name?item.name:userInfo.nickName}}</text>
+            <text class="">{{item.content}}</text>
+        </view>
+    </view>
+</view>
+<!-- 播放器 -->
+<view class="audio-container">
+    <view class="audio-control">
+        <image class="" src="{{isPlayingMusic?'/img/pause.png':'/img/play.png'}}" mode="widthFix" bindtap='playMusic'>
+        </image>
+    </view>
+    <view class='audio-progress'>
+        <view class="text"><text class="">{{courseNameC}}</text></view>
+        <slider block-size='14' bindchange='audioChange' bindchanging='audioChanging' value='{{sliderValue}}'></slider>
+        <view class="musicTime">{{musicTime}}</view>
+    </view>
+</view>

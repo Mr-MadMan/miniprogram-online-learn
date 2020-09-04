@@ -1,0 +1,7 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+  <view slot="content">习题库</view>
+</cu-custom>
+<view class="exam-choose-wrap" wx:for="{{courseList}}" wx:key="index" bindtap="examNav" hover-class="hover-style"
+  data-chapterId="{{index}}" data-navType="exam">
+  {{item}}
+</view>

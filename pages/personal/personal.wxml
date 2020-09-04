@@ -1,0 +1,64 @@
+<view class="personal_wrap">
+  <cu-custom bgColor="bg-white" isBack="{{false}}" style="width:100%">
+    <view slot="content">微课在线学习平台</view>
+  </cu-custom>
+  <block wx:if="{{canIUse}}">
+    <view wx:if="{{isShow}}" class="personal_user">
+      <view class="person">
+        <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+      </view>
+      <view class="username">
+        <text>{{stuInfo.stuid==''||stuInfo.stuid==NaN?userInfo.nickName:stuInfo.realname+stuInfo.stuid}}</text>
+      </view>
+    </view>
+    <view wx:else class="personal_user">
+      <text>点击授权获取更多权限 →</text>
+      <button plain="true" class="cu-btn round bg-gray shadow loginBtn" hover-class="hover-style" open-type='getUserInfo' bindgetuserinfo='bindTapView'>授权登录</button>
+    </view>
+  </block>
+  <block wx:else>请升级微信版本</block>
+  <view class="xiaoxizhongxin radius margin-xs align-center" hover-class="hover-style" bindtap="infoEdit">
+    <view class="xiaoxi_title">
+      <text class="cuIcon-message margin-right-sm"></text>
+      <text class="xiaoxi_title">编辑个人信息</text>
+    </view>
+    <image class="xiaoxi_img" src="/img/right.png" mode="widthFix"></image>
+  </view>
+  <view class="scan radius margin-xs align-center" bindtap="scan" hover-class="hover-style">
+    <view class="scan_title">
+      <text class="cuIcon-scan margin-right-sm"></text>
+      <text class="xiaoxi_title">扫一扫</text>
+    </view>
+    <image src="/img/right.png" mode="widthFix"></image>
+  </view>
+  <navigator class="xiaoxizhongxin radius margin-xs align-center" hover-class="hover-style" url="../QRCode/QRCode">
+    <view class="scan_title">
+      <text class="cuIcon-qr_code margin-right-sm"></text>
+      <text class="xiaoxi_title">二维码签到</text>
+    </view>
+    <image src="/img/right.png" mode="widthFix"></image>
+  </navigator>
+  <navigator class="wodekecheng radius margin-xs align-center" hover-class="hover-style"
+    url="../examChapter/examChapter">
+    <view class="wodekecheng_title">
+      <text class="cuIcon-list margin-right-sm"></text>
+      <text class="wodekecheng_title">我的习题库</text>
+    </view>
+    <image src="/img/right.png" mode="widthFix"></image>
+  </navigator>
+  <navigator class="wodeshoucang radius margin-xs align-center" hover-class="hover-style"
+    url="../teacherNav/teacherNav">
+    <view class="wodeshoucang_title">
+      <text class="cuIcon-link margin-right-sm"></text>
+      <text class="wodeshoucang_title">教师端登录</text>
+    </view>
+    <image src="/img/right.png" mode="widthFix"></image>
+  </navigator>
+  <navigator class="shezhi radius margin-xs align-center" url="../demoPage/demoPage" hover-class="hover-style">
+    <view class="shezhi_">
+      <text class="cuIcon-info df margin-right-sm"></text>
+      <text class="shezhi_title">意见反馈</text>
+    </view>
+    <image src="/img/right.png" mode="widthFix"></image>
+  </navigator>
+</view>

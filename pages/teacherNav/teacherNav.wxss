@@ -1,0 +1,26 @@
+page {
+  font-size: 20px;
+  background-color: #b396ff;
+  color: #fff;
+}
+
+.contentWrap {
+  text-align: center;
+  width: 100%;
+  height: 200rpx;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contentWrap :nth-child(1) {
+  display: inline-block;
+  margin: 80rpx 0;
+  font-size: 25px;
+}
+
+.cuIcon-discover {
+  margin: 100rpx 0;
+  font-size: 200rpx !important;
+}

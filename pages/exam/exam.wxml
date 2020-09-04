@@ -1,0 +1,28 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+  <view slot="content">题目集</view>
+</cu-custom>
+<scroll-view>
+  <view class="title">{{titlesList[index].title}}</view>
+</scroll-view>
+<scroll-view>
+  <button class="chooseBtn" id='A' bindtap="btnOpClick"
+    style="background-color: {{bcA}};">A.{{titlesList[index].content[0]}}</button>
+  <button class="chooseBtn" id='B' bindtap="btnOpClick"
+    style="background-color: {{bcB}};">B.{{titlesList[index].content[1]}}</button>
+  <button class="chooseBtn" id='C' bindtap="btnOpClick"
+    style="background-color: {{bcC}};">C.{{titlesList[index].content[2]}}</button>
+  <button class="chooseBtn" id='D' bindtap="btnOpClick"
+    style="background-color: {{bcD}};">D.{{titlesList[index].content[3]}}</button>
+  <!-- <radio-group>
+    <radio class="pink margin-left-sm" id="A" style="background-color: {{bcA}};" bindtap="btnOpClick" checked="{{false}}">{{titlesList[index].content[0]}}</radio>
+    <radio class="pink margin-left-sm" id="B" style="background-color: {{bcB}};" bindtap="btnOpClick" checked="{{false}}">{{titlesList[index].content[1]}}</radio>
+    <radio class="pink margin-left-sm" id="C" style="background-color: {{bcC}};" bindtap="btnOpClick" checked="{{false}}">{{titlesList[index].content[2]}}</radio>
+    <radio class="pink margin-left-sm" id="D" style="background-color: {{bcD}};" bindtap="btnOpClick" checked="{{false}}">{{titlesList[index].content[3]}}</radio>
+  </radio-group> -->
+</scroll-view>
+<view class="controlWrap">
+  <button bindtap="lastQuestion">上一题</button>
+  <button bindtap="nextQuestion">下一题</button>
+</view>
+<button bindtap="showResult" class="showBtn">{{flag?'显示答案':titlesList[index].answer}}</button>
+<text>每答对一题积2分，目前得分{{goal}}</text>

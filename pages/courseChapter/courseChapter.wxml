@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+  <view slot="content">章节选择</view>
+</cu-custom>
+<view class="chapterWrap" wx:for="{{chapterList}}" wx:key="index" data-courseid="{{index}}" bindtap="courseNav"
+  hover-class="hover-style">
+  <block wx:if="{{type == 'course'}}">
+    {{item.title}}
+  </block>
+  <block wx:else>
+    {{item}}
+  </block>
+
+</view>

@@ -1,0 +1,11 @@
+page {
+    height: 100%;
+}
+
+.imgWrap {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

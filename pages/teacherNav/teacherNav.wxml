@@ -1,0 +1,8 @@
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+  <view slot="content">教师端登录</view>
+</cu-custom>
+<view class="contentWrap">
+  <view>↓     请在PC上打开登录    ↓</view>
+  <text>https://wechat.loswork.iw3c.top/login</text>
+  <view class="cuIcon-discover margin-right-sm"></view>
+</view>

@@ -1,0 +1,70 @@
+/**index.wxss**/
+
+.container {
+  width: 100%;
+  margin-top: -200rpx;
+}
+
+.lunbor {
+  height: 300rpx;
+  width: 100%;
+  display: flex;
+}
+
+.lunbor swiper-item image {
+  width: 100%;
+}
+
+/***********主体盒子****************/
+
+.box {
+  padding: 1em;
+  background: #ffffff;
+  margin: 20rpx;
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.box .box-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 10rpx;
+}
+
+.box .box-title text {
+  font-size: 30rpx;
+}
+
+.see-all {
+  font-size: 30rpx;
+  color: #666666;
+  vertical-align: bottom;
+  margin-right: 10rpx;
+}
+
+.see-all image {
+  width: 1em;
+  height: 1em;
+  vertical-align: center;
+}
+
+.scroll_box {
+  display: flex;
+  overflow: hidden;
+  padding: 20rpx;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.class_list {
+  display: flex;
+  margin-right: 23rpx;
+}
+
+.class_list ._class {
+  width: 360rpx;
+  border-radius: 20rpx;
+  margin: 1em 0.4em;
+}

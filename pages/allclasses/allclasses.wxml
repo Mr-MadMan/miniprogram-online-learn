@@ -1,0 +1,14 @@
+<!--pages/allclasses/allclasses.wxml-->
+<cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+  <view slot="content">全部课程</view>
+</cu-custom>
+<view class="cu-list menu-avatar">
+  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}} radius margin-tb-lg" wx:for="{{classesList}}" wx:key="index" bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+    <view class="content">
+      <view class="text-grey bg-white text-shadow">{{item.name}}</view>
+    </view>
+    <view class="move" bindtap="addClass">
+      <view class="bg-grey radius" data-classid="{{index}}">添加</view>
+    </view>
+  </view>
+</view>

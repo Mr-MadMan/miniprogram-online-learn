@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <cu-custom bgColor="bg-white" isBack="{{false}}" style="width:100%">
+    <view slot="content">微课在线学习平台</view>
+  </cu-custom>
+  <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true"
+    autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3"
+    indicator-active-color="#0081ff" style="width:100%;">
+    <swiper-item wx:for="{{imgList}}" wx:key="index" class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item">
+        <image src="{{item.url}}" mode="scaleToFill"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+  <!-- 首页分布 -->
+  <view class='box'>
+    <view class='box-title'>
+      <text>我的课程</text>
+    </view>
+    <view class="scroll_box">
+      <scroll-view class='class_list' scroll-x>
+        <image class='_class' bindtap="jupmToDetail" wx:for="{{courseImg}}" wx:key="index" src='{{item.url}}'
+          data-chapterId="{{item.id}}" data-navType="course"></image>
+      </scroll-view>
+    </view>
+
+  </view>
+  <view class='box'>
+    <view class='box-title'>
+      <text>全部课程</text>
+      <navigator class="see-all" target="" url="../allclasses/allclasses" hover-class="none" open-type="navigate">查看全部
+        <image src='/img/right.png'></image>
+      </navigator>
+    </view>
+  </view>
+</view>

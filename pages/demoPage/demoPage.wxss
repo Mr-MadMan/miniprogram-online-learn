@@ -1,0 +1,16 @@
+page {
+  background-color: #b2ddeb;
+}
+
+.demoView {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  line-height: 150px;
+  text-align: center;
+  color: #7b7bd0;
+}

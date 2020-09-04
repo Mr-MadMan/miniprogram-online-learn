@@ -1,0 +1,45 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+    <view slot="content">微课在线学习平台</view>
+  </cu-custom>
+  <view class="imgwrap" hover-class="none">
+    <image class="" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+  </view>
+  <view class="namewrap">
+    <text>姓名</text>
+     <input type="text" name="name" placeholder="{{userInfo.nickName}}" value="{{name}}" confirm-type="done" />
+  </view>
+  <view class="sexwrap">
+    <text>性别</text>
+    <radio-group name="sex" bindchange='radiochange'>
+      <label>
+        <radio value="男" color="pink" checked="{{sex == '男'}}">男</radio>
+      </label>
+      <label>
+        <radio value="女" color="pink" checked="{{sex == '女'}}">女</radio>
+      </label>
+    </radio-group>
+  </view>
+  <view class="schoolwrap">
+    <text>院校</text>
+     <input type="text" name="school" placeholder="请输入所在院校" value="{{school}}" confirm-type="done" />
+  </view>
+  <view class="schoolwrap" style="border-color:#99b6a6;">
+    <text>班级</text>
+    <input type="number" name="classId" maxlength="8" placeholder="请输入所在班级" value="{{classId}}"
+      confirm-type="done" />
+  </view>
+  <view class="xuehaowrap">
+    <text>学号</text>
+     <input type="number" maxlength="10" name="xuehao" placeholder="请输入学号" value="{{xuehao}}" confirm-type="done" />
+  </view>
+  <view class="emailwrap">
+    <text>邮箱</text>
+     <input type="text" name="email" placeholder="请输入您的邮箱" value="{{email}}" confirm-type="done" />
+  </view>
+  <view class="btn">
+    <button formType="submit" class="submitbtn" hover-class="button-hover">
+      <image class="btnimg" src="/img/submit.png" mode="widthFix"></image>
+    </button>
+  </view>
+</form>

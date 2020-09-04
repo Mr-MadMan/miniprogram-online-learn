@@ -1,0 +1,14 @@
+/* pages/examChapter/examChapter.wxss */
+
+.exam-choose-wrap {
+  background-color: #fff;
+  height: 80rpx;
+  margin: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 15rpx;
+}
+
+.hover-style {
+  background-color: #cfcfcf;
+}

@@ -1,0 +1,80 @@
+
+.imgwrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 60rpx;
+}
+.imgwrap image{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+} 
+.namewrap{
+    margin: 30rpx 60rpx;
+    display: flex;
+    border-style: dashed;
+    border-color: rgb(80, 70, 168);
+    padding: 10rpx 20rpx;
+    align-items: center;
+}
+ input{
+    margin-left: 100rpx;
+    flex: 4;
+}
+
+.sexwrap{
+  display: flex;
+  flex:1;
+    /* justify-content: space-between; */
+    margin: 30rpx 60rpx;
+    border-style: dashed;
+    border-color:rgb(138, 127, 151) ;
+    padding: 10rpx 20rpx;
+    align-items: center;
+}
+.sexwrap radio-group{
+    margin-left: 100rpx;
+}
+.sexwrap radio{
+  padding-right: 80rpx;
+}
+.schoolwrap{
+    display: flex;
+    margin: 30rpx 60rpx;
+    border-style: dotted;
+    border-color: #577C8A;
+    border-width: 10rpx;
+    padding: 10rpx 20rpx;
+    align-items: center;
+}
+.xuehaowrap{
+    display: flex;
+    align-items: center;
+    margin: 30rpx 60rpx;
+    border-style: dotted;
+    border-color: #51A8DD;
+    border-width: 10rpx;
+    padding: 10rpx 20rpx;
+}
+.emailwrap{
+    display: flex;
+    align-items: center;
+    margin: 30rpx 60rpx;
+    border-style: dotted;
+    border-color: #81C7D4;
+    padding: 10rpx 20rpx;
+    border-width: 5rpx;
+}
+.btn{
+    margin-top: 30px;
+}
+.submitbtn{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+.btnimg{
+    width: 40%;
+}
+
+    

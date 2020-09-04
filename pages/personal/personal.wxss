@@ -1,0 +1,122 @@
+/* pages/personal/personal.wxss */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.personal_user {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    height: 200rpx;
+    margin-bottom: 100rpx;
+}
+.personal_user text{
+    margin-left: 45rpx;
+    font-size:18px;
+}
+.person {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.personal_user image {
+    border-radius: 50%;
+    height: 130rpx;
+    width: 130rpx;
+}
+
+.username{
+    display: flex;
+    flex: 4;
+    margin-right: 100rpx;
+
+}
+.username text{
+    font-size: 40rpx;
+
+}
+
+.loginBtn{
+    height: 100rpx;
+    width: 250rpx;
+    font-size: 16px;
+    margin:0 auto;
+}
+.scan {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20rpx;
+}
+
+.scan image {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+}
+
+.xiaoxizhongxin {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20rpx;
+}
+
+.xiaoxizhongxin image {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+}
+
+.wodekecheng {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20rpx;
+}
+
+.wodekecheng image {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+}
+
+.wodeshoucang {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20rpx;
+}
+
+.wodeshoucang image {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+}
+
+.shezhi {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20rpx;
+    margin-top: 90rpx;
+}
+
+.shezhi image {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+}
+
+.hover-style {
+    background-color: #cfcfcf;
+}

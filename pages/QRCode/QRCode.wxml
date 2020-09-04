@@ -1,0 +1,10 @@
+<view class="QRwrap">
+    <cu-custom bgColor="bg-white" isBack="{{true}}" style="width:100%">
+        <view slot="content">签到课程列表</view>
+    </cu-custom>
+    <view class="listWrap" wx:for="{{signList}}" wx:key="index">
+        <button class="listItem" bindtap="signChosen" data-signid="{{item.signid}}">
+            {{item.title}}
+        </button>
+    </view>
+</view>
